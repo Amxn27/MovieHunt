@@ -2,8 +2,8 @@
 
 a simple, responsive and functional movie searching app made using ReactJS.
 
-hosted link: 
-moviehunt-am.netlify.app
+hosted link: movie-hunt-am.netlify.app
+
 
 I have made this movie search app to practice my React skills. Mainly I make web pages by only keeping in mind of large screen users(PC, TV, laptops) and forgetting about small screen users(Mobile, Tablets).
 
@@ -14,9 +14,7 @@ This app uses [omdb API](https://www.omdbapi.com/) for fetching the movie data a
 ---
 
 
-=======
->>>>>>> acc7a12105f01b8fd8338ff1071d09445b3301e6
----
+
 
 ## To run the project
 
