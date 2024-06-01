@@ -11,9 +11,11 @@ const Main = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const navigate = useNavigate();
 
+  const apiKey = process.env.REACT_APP_API_KEY;
+
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://www.omdbapi.com/?s=${searchQuery}&apikey=${process.env.REACT_APP_API_KEY}`);
+      const response = await fetch(`https://www.omdbapi.com/?s=${searchQuery}&apikey=${apiKey}`);
       const data = await response.json();
 
       if (data.Response === 'True') {
@@ -31,7 +33,7 @@ const Main = () => {
 
   const handleMovieClick = async (movie) => {
     try {
-      const response = await fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${process.env.REACT_APP_API_KEY}`);
+      const response = await fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`);
       const data = await response.json();
 
       if (data.Response === 'True') {
@@ -76,7 +78,7 @@ const Main = () => {
   return (
     <div className="main-container">
       <div className="header">
-        <h2>Movie Hunter</h2>
+        <h2>Movie Hub</h2>
         <button onClick={() => navigate('/watchlist')} className="watchlist-button">My Watchlist</button>
         <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
