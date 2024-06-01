@@ -13,7 +13,7 @@ const Main = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://www.omdbapi.com/?s=${searchQuery}&apikey=baaf0aa4`);
+      const response = await fetch(`http://www.omdbapi.com/?s=${searchQuery}&apikey=${process.env.REACT_APP_API_KEY}`);
       const data = await response.json();
 
       if (data.Response === 'True') {
@@ -31,7 +31,7 @@ const Main = () => {
 
   const handleMovieClick = async (movie) => {
     try {
-      const response = await fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=baaf0aa4`);
+      const response = await fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${process.env.REACT_APP_API_KEY}`);
       const data = await response.json();
 
       if (data.Response === 'True') {
