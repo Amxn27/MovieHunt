@@ -76,7 +76,7 @@ const Main = () => {
   return (
     <div className="main-container">
       <div className="header">
-        <h2>Movie Search</h2>
+        <h2>Movie Hunter</h2>
         <button onClick={() => navigate('/watchlist')} className="watchlist-button">My Watchlist</button>
         <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
