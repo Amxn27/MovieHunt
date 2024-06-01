@@ -13,16 +13,6 @@ This app uses [omdb API](https://www.omdbapi.com/) for fetching the movie data a
 
 ---
 
-<<<<<<< HEAD
-## Screenshots
-![large_disp](readme_img/large_screen.png)
-![large_disp_modal](readme_img/large_screen_modal.png)
-<div align="center">
-<img src="./readme_img/signup_screen.PNG" width="45%">
-<img src="./readme_img/login_screen.PNG" width="45%">
-  <img src="./readme_img/small_screen.png" width="45%">
-  <img src="./readme_img/small_screen_modal.png" width="45%">
-</div>
 
 =======
 >>>>>>> acc7a12105f01b8fd8338ff1071d09445b3301e6
